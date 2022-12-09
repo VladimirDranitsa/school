@@ -1,0 +1,27 @@
+.certificate {
+  padding: var(--indent) 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__texts {
+    width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 103.2%;
+  }
+
+  &__img {
+  }
+}
+

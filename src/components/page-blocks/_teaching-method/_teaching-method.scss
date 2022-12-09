@@ -1,0 +1,54 @@
+.teaching-method {
+
+  &__inner {
+    padding: var(--indent) 0;
+  }
+
+  &__title {
+    margin-bottom: var(--indent);
+    text-align: center;
+  }
+
+  &__cards {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+
+  &__card {
+    width: 50%;
+  }
+
+  &__card-inner {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__card_reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__img {
+  }
+
+  &__texts {
+    padding: 0 0.5rem;
+    * + * {
+      margin-top: 0.6rem;
+    }
+  }
+
+  &__card-title {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &__text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 157%;
+  }
+}

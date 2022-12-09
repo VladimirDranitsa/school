@@ -1,0 +1,26 @@
+.promotion-first-month {
+  position: relative;
+  padding: 1.5rem 3rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  background: #EFF2FD;
+  border-radius: 25px;
+
+  &__img {
+    position: absolute;
+    top: -3rem;
+  }
+
+  &__texts {
+    margin-left: 10rem;
+    font-weight: 400;
+    * + * {
+      margin-top: 0.25rem;
+    }
+  }
+
+  &__subtitle {
+    line-height: 130%;
+  }
+}

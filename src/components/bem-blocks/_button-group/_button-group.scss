@@ -1,0 +1,35 @@
+.button-group {
+  min-width: 16rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  &__row {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+  }
+
+  &__text {
+    line-height: 165.2%;
+    font-weight: 400;
+    color: #737373;
+  }
+
+  &__link {
+    img {
+      transition: var(--transition);
+      height: 40px;
+    }
+
+    &:hover {
+      img {
+        @include btn_anim;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,139 @@
+.comparison {
+  padding: var(--indent) 0;
+
+  &__title {
+    margin-bottom: var(--indent);
+    text-align: center;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 295px;
+    width: 321px;
+    left: -7rem;
+    background-image: url("../../../img/comparison/1.webp");
+  }
+
+  &__content::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 296px;
+    width: 316px;
+    right: -7rem;
+    background-image: url("../../../img/comparison/2.webp");
+  }
+}
+
+.offline-school {
+  padding: 2.5rem;
+  background: linear-gradient(180deg, #EFF2FD 0%, #FCFCFC 100%);
+  border-radius: 1rem 0 0 1rem;
+  filter: drop-shadow(3.90651px 11.7195px 31.2521px rgba(30, 35, 66, 0.15));
+
+  &__heading {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 2rem;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__item::before {
+    content: " ";
+    display: block;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    left: -2rem;
+    top: calc(50% - 0.25rem);
+    border-radius: 50%;
+    background-color: var(--color__primary);
+  }
+
+  &__criterion {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+  }
+
+  &__difference {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+
+
+
+.online-school {
+  padding: 2.5rem;
+  filter: drop-shadow(4px 12px 20px rgba(30, 35, 66, 0.15));
+  background: var(--gradient__secondery);
+  border-radius: 1rem;
+
+  &__heading {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #F8F9FF;
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 2rem;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__item::before {
+    content: " ";
+    display: block;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    left: -2rem;
+    top: calc(50% - 0.25rem);
+    border-radius: 50%;
+    background-color: #F8F9FF;
+  }
+
+  &__criterion {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #F8F9FF;
+  }
+
+  &__difference {
+    font-size: 18px;
+    line-height: 150%;
+    color: #F8F9FF;
+  }
+}
+
